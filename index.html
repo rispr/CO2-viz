@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CO2 Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js" type="module"></script> 
+
+</head>
+
+<body>
+
+    <canvas id="c"></canvas>
+
+    <div id="content" class="contentClass">
+
+
+        <div class="wrapper">
+
+            <!-- LANDING PAGE -->
+
+            <div class="landing">
+                <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>What if CO<sub>2</sub> would not be so... <span>i</span><span>n</span><span>v</span><span>i</span><span>s</span><span>i</span><span>b</span><span>l</span><span>e</span><span>?</span>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <!-- ABOUT SECTION -->
+
+            <div class="about">
+                <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Let's say you want to see how much
+                        <div class="group">
+                            <input type="number" id="inputAmountCO2" value="1000" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>    
+                            <span increment="1"></span>
+                            <span min="1"></span>
+                            <span max="50000"></span>
+                            <label>enter Kg CO<sub>2</sub> (Max 50000)</label>
+                        </div>
+                        Kg of CO<sub>2</sub> in liquid form actually is.
+                    </h1>
+
+<!--                     <div>
+                        <input type="button" id="calculateButton" value="Calculate">
+                      </div> -->
+
+<!--                       <div>
+                        <span id="text_CO2_storage"></span>
+                        <span id="text_CO2_absorption"></span>
+                      </div> -->
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- INFO SECTION -->
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Ready? Continue to scroll down...</h1>
+            </div>
+        </div>
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1><span id="text_CO2_storage"></span> </h1>
+
+                <div class="list-item">
+                    <div id="div_storage" style="touch-action: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 200px;">
+                <h1>What bout trees?</h1>
+            </div>
+        </div>
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1><span id="text_CO2_absorption"></span></h1>
+
+                <div class="list-item">
+                    <div id="div_sequestration" style="touch-action: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 200px;">
+                <h1>How does that sound to you?</h1>
+            </div>
+        </div>
+
+
+        <!-- BANNER AND FOOTER -->
+
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Take action. <br> <span style="font-size:1.6vw;font-weight:normal" class="bannerInnerText">
+                        Calculate your impact and start reducing your carbon footprint.
+                    </span> </h1>
+                <div class="btn">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                <img src="img/MobileApp.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Visualize CO2</h2>
+            <div class="footerlinks">
+                Made with <span style="color: #12b656;">&#9829;</span> by <a href="https://rispr.github.io/">Riccardo Sprocati</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    </div>
+</body>
+
+</html>
